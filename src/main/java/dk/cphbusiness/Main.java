@@ -65,6 +65,8 @@ public class Main {
                 "</div></body></html>";
 
         Document document = Jsoup.parse(html);
+        String css = "div.bootstrap:nth-child(2) > ul:nth-child(1) > li:nth-child(1) > span.myclass";
+        String xpath = "/html/body/";
 //        document.select("div").forEach(div -> System.out.println(div.text()));
         // Class selector .info
 //        document.select(".info").forEach(div -> System.out.println(div.text()));
